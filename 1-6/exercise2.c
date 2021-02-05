@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "exercises1-6.h"
+//#include "exercises1-6.h" //who even wanted this anyhow?
 
 void exercise2(){
 
@@ -10,7 +10,7 @@ void exercise2(){
     int number;
     char character;
     char string[20];
-    scanf("%s %c %d", &string, &character, &number);
+    scanf("%20s %c %d", string, &character, &number);
 
     printf("String: %s Char: %c Number: %d", string,character,number);
 

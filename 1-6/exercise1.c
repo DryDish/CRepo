@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+//#include "exercises1-6.h"
+
 // you buy 41112 Lego blocks with a price of kr. 11,48 without moms
 // make a invoice, where all the numbers are nice lined up under each other.
 // Number.
