@@ -13,6 +13,8 @@ void exercise4(void){
 
     printf("--------------------Exercise-four--------------------\n\n");
 
+    printf(" --- printing with for loops ---\n\n");
+
     int days[] ={31,28,31,30,31,30,31,31,30,31,30,31};
     for (int i = 0; i < 11; i++)
     {
@@ -28,6 +30,8 @@ void exercise4(void){
 void exercise4a(void){
 
     printf("--------------------Exercise-four-a-------------------\n\n");
+
+    printf(" --- printing with for while loop ---\n\n");
 
     int days[] ={31,28,31,30,31,30,31,31,30,31,30,31};
     int i = 0;
@@ -46,6 +50,8 @@ void exercise4a(void){
 void exercise4b(void){
 
     printf("--------------------Exercise-four-b-------------------\n\n");
+
+    printf(" --- printing with for do while loop ---\n\n");
 
     int days[] ={31,28,31,30,31,30,31,31,30,31,30,31};
     int i = 0;

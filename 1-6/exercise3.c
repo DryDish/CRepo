@@ -15,7 +15,7 @@ void exercise3(void){
 
     printf("--------------------Exercise-three--------------------\n\n");
 
-
+    printf(" --- Trying different input methods ---\n\n");
     char character;
     char name[20];
     printf("Please type a name no more than 20 chars long and press enter : \n");
@@ -27,8 +27,7 @@ void exercise3(void){
     character = getchar();
 
     printf("Name : %s\nChar : %c", name, character);
-
-
+    getchar();
 
     printf("\n------------------End-Exercise-three------------------\n\n\n");
 }
