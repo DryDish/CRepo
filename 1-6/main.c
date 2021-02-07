@@ -7,5 +7,9 @@ int main(){
     exercise1();
     //exercise2();
     //exercise3();
-    exercise4();
+    //exercise4();
+        //exercise4a();
+        //exercise4b();
+    exercise5();
+    exercise5a();
 }

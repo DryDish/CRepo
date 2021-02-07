@@ -29,7 +29,17 @@ void exercise4a(void){
 
     printf("--------------------Exercise-four-a-------------------\n\n");
 
-        
+    int days[] ={31,28,31,30,31,30,31,31,30,31,30,31};
+    int i = 0;
+    while(i < 12)
+    {
+        char suffix[9] = "and so on";
+        if (i==0)
+            printf("Month nr. %d contains %d days\n", i+1, days[i] );
+        else
+            printf("Month nr. %d contains %d days %s\n", i+1, days[i], suffix );
+        i++;
+    }
 
     printf("\n------------------End-Exercise-four-a-----------------\n\n\n");
 }
@@ -37,7 +47,17 @@ void exercise4b(void){
 
     printf("--------------------Exercise-four-b-------------------\n\n");
 
-
+    int days[] ={31,28,31,30,31,30,31,31,30,31,30,31};
+    int i = 0;
+    do
+    {
+        char suffix[9] = "and so on";
+        if (i==0)
+            printf("Month nr. %d contains %d days\n", i+1, days[i] );
+        else
+            printf("Month nr. %d contains %d days %s\n", i+1, days[i], suffix );
+        i++;
+    } while(i < 12);
 
     printf("\n------------------End-Exercise-four-b-----------------\n\n\n");
 }
