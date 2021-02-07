@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-//#include "exercises1-6.h"
+#include "exercises1-6.h"
 
 // you buy 41112 Lego blocks with a price of kr. 11,48 without moms
 // make a invoice, where all the numbers are nice lined up under each other.
@@ -10,7 +10,7 @@
 // moms
 // total price all inclusive(moms is a tax of 25 %).
 
-void exercise1(){
+void exercise1(void){
 
     printf("---------------------Exercise-One--------------------\n\n");
 
