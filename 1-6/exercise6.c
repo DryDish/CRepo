@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 #include "exercises1-6.h"
+#include "../decoration/decoration.h"
 
 // There are other input methods, try them.
 // gets()
@@ -13,25 +14,26 @@
 
 int exercise6(int a){
 
-    printf("--------------------Exercise-six--------------------\n\n");
+    separatorStart("Six");
 
     int multiplied = a * a;
     printf("The number received was: %d and it will return: %d\n",a , multiplied);
 
-    printf("\n------------------End-Exercise-six------------------\n\n\n");
+    separatorEnd("Six");
     return multiplied;
 }
 int exercise6a(int a, int b){
 
-    printf("--------------------Exercise-six-a-------------------\n\n");
+    separatorStart("Six-a");
 
     if (a<b) {
         printf("The number received was: (%d, %d) and it will return: %d\n", a, b, a);
+        separatorEnd("Six-a");
         return a;
     }
     else {
         printf("The number received was: (%d, %d) and it will return: %d\n", a, b, b);
+        separatorEnd("Six-a");
         return b;
     }
-    printf("\n------------------End-Exercise-six-a-----------------\n\n\n");
 }

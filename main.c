@@ -3,6 +3,7 @@
 
 #include "1-6/exercises1-6.h"
 #include "7-11/exercises7-11.h"
+#include "decoration/decoration.h"
 
 void exerciseSet1_6()
 {
@@ -24,6 +25,6 @@ void exerciseSet7_11()
 }
 
 int main(){
-    //exerciseSet1_6();
+    exerciseSet1_6();
     exerciseSet7_11();
 }

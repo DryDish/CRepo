@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 #include "exercises1-6.h"
+#include "../decoration/decoration.h"
 
 // int dage[] ={31,28,31,30,31,30,31,31,30,31,30,31}
 // Make a program with a ”for loop” to make the printout.
@@ -10,8 +11,7 @@
 
 
 void exercise4(void){
-
-    printf("--------------------Exercise-four--------------------\n\n");
+    separatorStart("Four");
 
     printf(" --- printing with for loops ---\n\n");
 
@@ -25,11 +25,10 @@ void exercise4(void){
             printf("Month nr. %d contains %d days %s\n", i+1, days[i], suffix );
     }
 
-    printf("\n------------------End-Exercise-four------------------\n\n\n");
+    separatorEnd("Four");
 }
 void exercise4a(void){
-
-    printf("--------------------Exercise-four-a-------------------\n\n");
+    separatorStart("Four-a");
 
     printf(" --- printing with for while loop ---\n\n");
 
@@ -45,11 +44,10 @@ void exercise4a(void){
         i++;
     }
 
-    printf("\n------------------End-Exercise-four-a-----------------\n\n\n");
+    separatorEnd("Four-a");
 }
 void exercise4b(void){
-
-    printf("--------------------Exercise-four-b-------------------\n\n");
+    separatorStart("Four-b");
 
     printf(" --- printing with for do while loop ---\n\n");
 
@@ -65,5 +63,5 @@ void exercise4b(void){
         i++;
     } while(i < 12);
 
-    printf("\n------------------End-Exercise-four-b-----------------\n\n\n");
+    separatorEnd("Four-b");
 }

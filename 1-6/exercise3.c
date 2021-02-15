@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 #include "exercises1-6.h"
+#include "../decoration/decoration.h"
 
 // There are other input methods, try them.
 // gets()
@@ -12,8 +13,7 @@
 // character = getchar();
 
 void exercise3(void){
-
-    printf("--------------------Exercise-three--------------------\n\n");
+    separatorStart("Three");
 
     printf(" --- Trying different input methods ---\n\n");
     char character;
@@ -29,5 +29,5 @@ void exercise3(void){
     printf("Name : %s\nChar : %c", name, character);
     getchar();
 
-    printf("\n------------------End-Exercise-three------------------\n\n\n");
+    separatorEnd("Three");
 }

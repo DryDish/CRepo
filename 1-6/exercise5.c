@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 #include "exercises1-6.h"
+#include "../decoration/decoration.h"
 
 // Make a program where you input a character;
 // If the character is an “a” or “A” the program will printout “Apple”;
@@ -14,8 +15,7 @@
 
 
 void exercise5(void){
-
-    printf("--------------------Exercise-five--------------------\n\n");
+    separatorStart("Five");
 
     printf("Please type a single character from a to e.\n Confirm your input with enter.\n");
     char letter;
@@ -37,12 +37,12 @@ void exercise5(void){
         printf("I don't know any fruits that start with %c\n", letter);
     }
     getchar();
-    printf("\n------------------End-Exercise-five------------------\n\n\n");
+    separatorEnd("Five");
 }
 
 void exercise5a(void){
 
-    //printf("--------------------Exercise-five-a--------------------\n\n");
+    separatorStart("Five-a");
 
     printf("Please type a single character from a to e.\n Confirm your input with enter.\n");
     char letter;
@@ -85,6 +85,6 @@ void exercise5a(void){
             printf("I don't know any fruits that start with %c\n", letter);
             break;
     }
-    //printf("\n------------------End-Exercise-five-a-----------------\n\n\n");
 
+    separatorEnd("Five-a");
 }

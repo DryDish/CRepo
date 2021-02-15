@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "exercises1-6.h" //who even wanted this anyhow?
+#include "exercises1-6.h"
+#include "../decoration/decoration.h"
 
 void exercise2(void){
-
-    printf("---------------------Exercise-Two--------------------\n\n");
+    separatorStart("One");
 
     int number;
     char character;
@@ -16,5 +16,5 @@ void exercise2(void){
     getchar(); //clear the remaining '\0'
     printf("String: %s Char: %c Number: %d", string,character,number);
 
-    printf("\n------------------End-Exercise-Two-------------------\n\n\n");
+    separatorEnd("One");
 }

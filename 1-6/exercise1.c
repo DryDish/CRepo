@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 #include "exercises1-6.h"
+#include "../decoration/decoration.h"
 
 // you buy 41112 Lego blocks with a price of kr. 11,48 without moms
 // make a invoice, where all the numbers are nice lined up under each other.
@@ -11,8 +12,7 @@
 // total price all inclusive(moms is a tax of 25 %).
 
 void exercise1(void){
-
-    printf("---------------------Exercise-One--------------------\n\n");
+    separatorStart("One");
 
     double legoPrice = 11.48;
     int legPiecesBought = 41112;
@@ -29,5 +29,5 @@ void exercise1(void){
     printf("%41s %.2fkr\n","Total with Moms :", totalPriceWithMoms);
     printf("---------------------RECEIPT-END---------------------\n");
 
-    printf("\n------------------End-Exercise-One-------------------\n\n\n");
+    separatorEnd("One");
 }
