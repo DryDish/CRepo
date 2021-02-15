@@ -57,28 +57,28 @@ void exercise5a(void){
             printf("Apple!\n");
             break;
         case 'b':
-            printf("Banana!");
+            printf("Banana!\n");
             break;
         case 'B':
-            printf("Banana!");
+            printf("Banana!\n");
             break;
         case 'c':
-            printf("Coconut!");
+            printf("Coconut!\n");
             break;
         case 'C':
-            printf("Coconut!");
+            printf("Coconut!\n");
             break;
         case 'd':
-            printf("Date!");
+            printf("Date!\n");
             break;
         case 'D':
-            printf("Date!");
+            printf("Date!\n");
             break;
         case 'e':
-            printf("Elderberry!");
+            printf("Elderberry!\n");
             break;
         case 'E':
-            printf("Elderberry!");
+            printf("Elderberry!\n");
             break;
         default:
             printf("Thought we could be sneaky did we?\n");
