@@ -13,4 +13,4 @@ add_executable(c_repo
         1-6/exercise4.c
         1-6/exercise5.c
         1-6/exercise6.c
-        1-6/main.c 1-6/exercises1-6.h)
+        1-6/exercises1-6.h 7-11/exercises7-11.h 7-11/exercise7.c main.c)

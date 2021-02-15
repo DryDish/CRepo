@@ -16,7 +16,7 @@ void exercise4(void){
     printf(" --- printing with for loops ---\n\n");
 
     int days[] ={31,28,31,30,31,30,31,31,30,31,30,31};
-    for (int i = 0; i < 11; i++)
+    for (int i = 0; i < 12; i++)
     {
         char suffix[9] = "and so on";
         if (i==0)
