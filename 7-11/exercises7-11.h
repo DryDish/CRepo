@@ -21,5 +21,6 @@ struct Locomotive
 void exercise7(struct Message message[MAXMSG]);
 void exercise8(struct Message message[MAXMSG], int locoAddr, int data1);
 void exercise9(struct Locomotive *train, char newDirection[2]);
-
+int exercise9a(struct Locomotive a, struct Locomotive b);
+void exercise10(int lightsOffTimes, struct Locomotive trains[]);
 #endif //C_REPO_EXERCISES7_11_H
