@@ -9,8 +9,17 @@ struct Message            // buffer for command
     unsigned char len;      // number of positions in use
 };
 
+struct Locomotive
+{
+    int id;             // 0 - 200
+    char name[20];
+    int speed;          // -100 - 100
+    char direction[2];  // compass direction fx. ne, nn, nw ect.
+    int light;
+};
+
 void exercise7(struct Message message[MAXMSG]);
 void exercise8(struct Message message[MAXMSG], int locoAddr, int data1);
-void exercise9(struct Message message[MAXMSG]);
+void exercise9(struct Locomotive *train, char newDirection[2]);
 
 #endif //C_REPO_EXERCISES7_11_H

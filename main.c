@@ -30,8 +30,14 @@ void exerciseSet7_11()
         { { 0xFF, 0, 0xFF, 0, 0, 0, 0}, 3}, // idle msg
         { { 0,    0,    0, 0, 0, 0, 0}, 3}, // loco msg
     };
+    struct Locomotive trainOne ={1, "St. Speed", 100, "ne", 0};
+    struct Locomotive trainTwo ={2, "St. Reverse", -100, "sw", 1};
+
+
     exercise7(message);
     exercise8(message,8,128); //locomotive address is the train. 128 is lights off and 129 is on.
+    exercise9(&trainOne,"sw");
+    printf("%s",trainOne.direction);
 }
 
 int main()
