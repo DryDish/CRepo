@@ -5,6 +5,9 @@
 #include "7-11/exercises7-11.h"
 #include "decoration/decoration.h"
 
+
+
+
 void exerciseSet1_6()
 {
     exercise1();
@@ -21,10 +24,18 @@ void exerciseSet1_6()
 
 void exerciseSet7_11()
 {
-    exercise7();
+    // assigning data to the struct Message
+    struct Message message[MAXMSG] =
+    {
+        { { 0xFF, 0, 0xFF, 0, 0, 0, 0}, 3}, // idle msg
+        { { 0,    0,    0, 0, 0, 0, 0}, 3}, // loco msg
+    };
+    exercise7(message);
+    exercise8(message,8,128); //locomotive address is the train. 128 is lights off and 129 is on.
 }
 
-int main(){
-    exerciseSet1_6();
+int main()
+{
+    //exerciseSet1_6();
     exerciseSet7_11();
 }
