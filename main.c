@@ -3,6 +3,7 @@
 
 #include "1-6/exercises1-6.h"
 #include "7-11/exercises7-11.h"
+#include "12-16/exercises12-16.h"
 #include "decoration/decoration.h"
 
 
@@ -48,8 +49,17 @@ void exerciseSet7_11()
     exercise10(10, trainArray);
 }
 
+void exerciseSet12_16()
+{
+    exercise12();
+    exercise13();
+    //exercise14();
+    //exercise15();
+    //exercise16();
+}
 int main()
 {
     //exerciseSet1_6();
-    exerciseSet7_11();
+    //exerciseSet7_11();
+    exerciseSet12_16();
 }
