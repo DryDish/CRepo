@@ -14,7 +14,7 @@ struct Locomotive
     int id;             // 0 - 200
     char name[20];
     int speed;          // -100 - 100
-    char direction[2];  // compass direction fx. ne, nn, nw ect.
+    char direction[2];  // compass direction fx. ne, nn, nw ect. (correct is: 0x40 back - 0x60 forward)
     int light;
 };
 

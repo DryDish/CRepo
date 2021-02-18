@@ -53,7 +53,7 @@ void exerciseSet12_16()
 {
     exercise12();
     exercise13();
-    //exercise14();
+    exercise14();
     //exercise15();
     //exercise16();
 }

@@ -2,7 +2,7 @@
 #include "exercises7-11.h"
 #include "../decoration/decoration.h"
 
-void exercise8(struct Message message[MAXMSG], int locoAddr, int data1)
+void exercise8(struct Message message[MAXMSG], int locoAddr, int data1) //assign byte instead of int (extension or char[7])
 {
     separatorStart("Eight");
 
@@ -17,6 +17,7 @@ void exercise8(struct Message message[MAXMSG], int locoAddr, int data1)
 
     message[1].data[0]= locoAddr;
     message[1].data[1]= data1;
+
 
     int newLocoAddr = message[1].data[0];
     int newData1 = message[1].data[1];
