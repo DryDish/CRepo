@@ -4,7 +4,7 @@
 #include "1-6/exercises1-6.h"
 #include "7-11/exercises7-11.h"
 #include "12-16/exercises12-16.h"
-#include "decoration/decoration.h"
+#include "17-22/exercises17-22.h"
 
 
 
@@ -59,9 +59,20 @@ void exerciseSet12_16()
     exercise15b();
     exercise16();
 }
+
+int exerciseSet17_21()
+{
+    int someArray[100];
+    exercise17();
+    exercise18();
+    exercise19();
+    exercise20(someArray);
+    return 0;
+}
 int main()
 {
     //exerciseSet1_6();
     //exerciseSet7_11();
-    exerciseSet12_16();
+    //exerciseSet12_16();
+    exerciseSet17_21();
 }
