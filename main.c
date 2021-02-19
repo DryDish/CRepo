@@ -54,8 +54,10 @@ void exerciseSet12_16()
     exercise12();
     exercise13();
     exercise14();
-    //exercise15();
-    //exercise16();
+    exercise15();
+    exercise15a();
+    exercise15b();
+    exercise16();
 }
 int main()
 {
