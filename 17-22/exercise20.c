@@ -4,6 +4,14 @@
 
 void printArrayWithPointers(int *number);
 
+/*
+ * Make a new program, declare a one dimensional array by the type of int, assign the
+ * array with the values by using a pointer(s). (1... - 100).
+ *
+ * Now call a procedure to make a formatted printout the values from the array.
+ * Again use pointer(s).
+ */
+
 int exercise20(int arrayPassed[100])
 {
     separatorStart("20");
