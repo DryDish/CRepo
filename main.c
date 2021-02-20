@@ -67,6 +67,7 @@ int exerciseSet17_21()
     exercise18();
     exercise19();
     exercise20(someArray);
+    exercise21();
     return 0;
 }
 int main()

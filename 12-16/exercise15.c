@@ -25,7 +25,7 @@ void exercise15(void)
         } else {
             minCharSize = testerChar;
         }
-        testerChar= testerChar << 1;
+        testerChar = testerChar << 1;
         bitCounter +=1;
     }
 
