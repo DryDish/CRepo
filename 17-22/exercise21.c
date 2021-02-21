@@ -55,7 +55,7 @@ int exercise21(void)
         arrayOfDimensions[i][1] = i+4;
     }
 
-    printf("Checking the contents of the array: \n[");
+    printf("Checking the contents of the array: \n[ ");
     for (int i = 0; i < 10; i++)
     {
         printf("(%d, %d) ", arrayOfPointers[i][0], arrayOfPointers[i][1]);
