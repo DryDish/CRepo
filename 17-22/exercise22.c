@@ -2,8 +2,8 @@
 #include "exercise22.h"
 #include "../decoration/decoration.h"
 
-//void pointerChanger(int *pointer,int size, int *arrPtr[]);
-void pointerChanger(int *a, int *b);
+void pointerChanger(int *pointer,int size, int *arrPtr[]);
+//void pointerChanger(int *a, int *b);
 
 /*
  * Take the array of pointers from Assignment 21 and make a new pointer to point to
@@ -76,7 +76,7 @@ int exercise22(void)
     }
     printf("----- pointer = %p\n", &ptrSecondPointer[0]);
     int size = 13;
-    //pointerChanger(ptrSecondPointer, size, arrayOfPointers);
+    pointerChanger(ptrSecondPointer, size, arrayOfPointers);
     //pointerChanger(ptrSecondPointer, ptrThirdPointer);
     printf("-----------------------------------------------------------------------------------\n");
 
@@ -94,23 +94,24 @@ int exercise22(void)
     separatorEnd("22");
     return 0;
 }
-/*
+
 void pointerChanger(int *pointer, int size, int *arrPtr[])
 {
     printf("\n array pointer = %p pointer: %p, array data = %d pointer data: %d\n", &arrPtr[1][0], &pointer[0], arrPtr[1][0], *pointer);
     int choice = size % 10;
     //pointer = NULL;
     *pointer = arrPtr[choice][0];
-    printf("\n array pointer = %p pointer: %p, array data = %d pointer data: %d\n", &arrPtr[choice][0], &pointer[0], arrPtr[3][0], *pointer);
+    printf("\n array pointer = %p pointer: %p, array data = %d pointer data: %d\n", &arrPtr[choice][0], &pointer[0], arrPtr[choice][0], *pointer);
 }
-*/
+/*
 void pointerChanger(int *pointerA, int *pointerB)
 {
-    /*
+
     printf("A: %p B: %p\n", &pointerA, &pointerB);
     int *temp = pointerB;
 
     pointerA = temp;
     printf("A: %p B: %p\n", &pointerA, &pointerB);
-     **/
+
 }
+**/
