@@ -5,7 +5,7 @@
 #include "7-11/exercises7-11.h"
 #include "12-16/exercises12-16.h"
 #include "17-22/exercises17-22.h"
-
+#include "23-28/exercises23-28.h"
 
 
 
@@ -71,10 +71,16 @@ int exerciseSet17_21()
     exercise22();
     return 0;
 }
+
+int exerciseSet23_28()
+{
+    exercise23();
+}
 int main()
 {
     //exerciseSet1_6();
     //exerciseSet7_11();
     //exerciseSet12_16();
     exerciseSet17_21();
+    exerciseSet23_28();
 }

@@ -2,7 +2,7 @@
 #include "exercise22.h"
 #include "../decoration/decoration.h"
 
-void pointerChanger(int *pointer,int size, int *arrPtr[]);
+int* pointerChanger(int *pointer,int size, int *arrPtr[]);
 //void pointerChanger(int *a, int *b);
 
 /*
@@ -18,6 +18,7 @@ void pointerChanger(int *pointer,int size, int *arrPtr[]);
 int exercise22(void)
 {
     separatorStart("22");
+
 
     int *arrayOfPointers[10];
     int *ptrSecondPointer = NULL;
@@ -48,7 +49,6 @@ int exercise22(void)
     arrayOfDimensionsPtr8 = arrayOfDimensions[8];
     arrayOfDimensionsPtr9 = arrayOfDimensions[9];
 
-
     arrayOfPointers[0] = arrayOfDimensionsPtr0;
     arrayOfPointers[1] = arrayOfDimensionsPtr1;
     arrayOfPointers[2] = arrayOfDimensionsPtr2;
@@ -66,7 +66,8 @@ int exercise22(void)
     arrayOfDimensions[3][0]= 100;
     arrayOfDimensions[3][1]= 200;
 
-    ptrSecondPointer = arrayOfPointers[1];
+    ptrSecondPointer = arrayOfDimensionsPtr0;
+    ptrSecondPointer += 10;
     int *ptrThirdPointer = arrayOfPointers[3];
     int *j = ptrSecondPointer;
     for (int i = 0; i < 2; i++,j++)
@@ -76,18 +77,17 @@ int exercise22(void)
     }
     printf("----- pointer = %p\n", &ptrSecondPointer[0]);
     int size = 13;
-    pointerChanger(ptrSecondPointer, size, arrayOfPointers);
-    //pointerChanger(ptrSecondPointer, ptrThirdPointer);
+    ptrSecondPointer = pointerChanger(ptrSecondPointer, size, arrayOfPointers);
     printf("-----------------------------------------------------------------------------------\n");
 
-    printf("----- pointer = %p\n", &ptrSecondPointer[0]);
+    printf("----- pointer should be the same as above ^pointer = %p\n", &ptrSecondPointer[0]);
     int *k = ptrSecondPointer;
     int *l = ptrThirdPointer;
     for (int i = 0; i < 2; i++,l++, k++)
     {
         printf("%d\n",size%5);
         printf("ptr3: array of pointers [%d][%d]: %d\n",size%5, i, *l);
-        printf("index: array of pointers [%d][%d]: %d\n",size%5 ,i, arrayOfPointers[size%2][i]);
+        printf("index: array of pointers [%d][%d]: %d\n",size%5 ,i, arrayOfPointers[size%10][i]);
         printf("ptr2: secondPointer secondPointer[%d]: %d\n\n",i, *k);
     }
 
@@ -95,23 +95,11 @@ int exercise22(void)
     return 0;
 }
 
-void pointerChanger(int *pointer, int size, int *arrPtr[])
+int* pointerChanger(int *pointer, int size, int *arrPtr[])
 {
     printf("\n array pointer = %p pointer: %p, array data = %d pointer data: %d\n", &arrPtr[1][0], &pointer[0], arrPtr[1][0], *pointer);
     int choice = size % 10;
-    //pointer = NULL;
-    *pointer = arrPtr[choice][0];
+    pointer = &arrPtr[choice][0];
     printf("\n array pointer = %p pointer: %p, array data = %d pointer data: %d\n", &arrPtr[choice][0], &pointer[0], arrPtr[choice][0], *pointer);
+    return pointer;
 }
-/*
-void pointerChanger(int *pointerA, int *pointerB)
-{
-
-    printf("A: %p B: %p\n", &pointerA, &pointerB);
-    int *temp = pointerB;
-
-    pointerA = temp;
-    printf("A: %p B: %p\n", &pointerA, &pointerB);
-
-}
-**/
