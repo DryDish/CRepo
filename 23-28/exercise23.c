@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <decoration/decoration.h>
 #include "exercise23.h"
 
 int printValue(int var, int *ptr, int **pPtr);
@@ -6,6 +7,8 @@ int printValue(int var, int *ptr, int **pPtr);
 
 int exercise23(void)
 {
+    separatorStart("23");
+
     int    var1,  var2 ;
     int   *ptr1, *ptr2 ;
     int  **pPtr;       // A Pointer to a Pointer
@@ -26,8 +29,9 @@ int exercise23(void)
     /* change to the address of ptr2 using address of operator & */
     pPtr = &ptr2;
 
-    /* take the value using pptr */
+    /* take the value using pPtr */
     printValue(var2, ptr2, pPtr);
+    separatorEnd("23");
     return 0;
 }
 

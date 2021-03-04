@@ -75,12 +75,15 @@ int exerciseSet17_21()
 int exerciseSet23_28()
 {
     exercise23();
+    exercise24();
+    exercise25();
+    return 0;
 }
 int main()
 {
     //exerciseSet1_6();
     //exerciseSet7_11();
     //exerciseSet12_16();
-    exerciseSet17_21();
+    //exerciseSet17_21();
     exerciseSet23_28();
 }
