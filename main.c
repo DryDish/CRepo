@@ -6,8 +6,7 @@
 #include "12-16/exercises12-16.h"
 #include "17-22/exercises17-22.h"
 #include "23-28/exercises23-28.h"
-
-
+#include "TrainSextant/readFromStruct.h"
 
 void exerciseSet1_6()
 {
@@ -81,9 +80,15 @@ int exerciseSet23_28()
 }
 int main()
 {
+    struct Instruction choohoo[4] =
+            {
+                    { { 0xFF, 0, 0xFF, 0, 0, 0, 0}, 4}, // idle msg
+                    { { 0,    0,    0, 0, 0, 0, 0}, 4}, // loco msg
+            };
     //exerciseSet1_6();
     //exerciseSet7_11();
     //exerciseSet12_16();
     //exerciseSet17_21();
-    exerciseSet23_28();
+    //exerciseSet23_28();
+    readStructData(choohoo);
 }
