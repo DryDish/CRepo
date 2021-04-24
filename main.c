@@ -6,8 +6,6 @@
 #include "12-16/exercises12-16.h"
 #include "17-22/exercises17-22.h"
 #include "23-28/exercises23-28.h"
-#include "TrainSextant/readFromStruct.h"
-#include "TrainSextant/write.h"
 
 void exerciseSet1_6()
 {
@@ -79,14 +77,14 @@ int exerciseSet23_28()
     exercise25();
     return 0;
 }
-/*
+
 int main()
 {
     //exerciseSet1_6();
     //exerciseSet7_11();
     //exerciseSet12_16();
     //exerciseSet17_21();
-    //exerciseSet23_28();
+    exerciseSet23_28();
 
 }
- */
+
