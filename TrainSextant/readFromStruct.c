@@ -1,26 +1,14 @@
 #include "readFromStruct.h"
 #include <stdio.h>
 #include "struct.h"
-#define MAXMSG 4
-// Make a C program which can print out the content of a struct as mentioned above.
-// This is going to be used for test purposes.
 
-void readStructData(struct Instruction instruction[MAXMSG])
+void readStructData(struct Instruction instruction)
 {
-    // Preamble
-    instruction[1].data[0] = 0XFF;
-    // Engine Address
-    instruction[1].data[1] = 255;
-    // Command
-    instruction[1].data[2] = 3;
-    // Checksum
-    instruction[1].data[2] = instruction[1].data[1]^instruction[1].data[2];
+    char preamble1 = instruction.preamble[0];
+    char preamble2 = instruction.preamble[1];
+    int engineNumber = instruction.engineNumber;
+    int command = instruction.command;
+    int checksum = instruction.checksum;
 
-    int preamble = instruction[1].data[0];
-    int engineAddress = instruction[1].data[1];
-    int command = instruction[1].data[2];
-    int checksum = instruction[1].data[3];
-
-    printf("preamble is: 0x%X, engineAddress is: %d, command is: %d"", checksum is: 0x%X\n"
-           ,preamble, engineAddress, command, checksum);
+    printf("The preamble is : 0x%X, engineNumber is: %d, command is: %d"", checksum is: 0x%X\n",(preamble1 + preamble2) +1, engineNumber, command, checksum);
 }
