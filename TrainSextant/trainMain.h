@@ -1,6 +1,0 @@
-#ifndef C_REPO_TRAINMAIN_H
-#define C_REPO_TRAINMAIN_H
-
-
-
-#endif //C_REPO_TRAINMAIN_H

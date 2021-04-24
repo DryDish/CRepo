@@ -3,5 +3,5 @@
 
 void write0();
 void write1();
-void writeByte(int byte);
+void writeByte(unsigned char byte);
 #endif //C_REPO_WRITE_H

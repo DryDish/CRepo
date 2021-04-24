@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "trainMain.h"
 #include "readFromStruct.h"
 #include "write.h"
 #include "writeToTrain.h"

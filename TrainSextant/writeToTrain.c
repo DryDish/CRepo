@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "writeToTrain.h"
-// #include "write.h"
+#include "write.h"
 
 void writeByte(unsigned char byte)
 {

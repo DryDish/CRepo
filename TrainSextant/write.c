@@ -1,6 +1,5 @@
 #include "write.h"
 
-/*
 void write1()
 {
     digitalWrite(A, HIGH);
@@ -21,7 +20,7 @@ void write0()
     delayMicroseconds(96);
 }
 
- void writeByte(int byte)
+ void writeByte(unsigned char byte)
  {
     for (int i = 7; i >= 0; i--) {
       if ((byte & (1 << i)) > 0) {
@@ -31,4 +30,3 @@ void write0()
       }
     }
   }
-*/
